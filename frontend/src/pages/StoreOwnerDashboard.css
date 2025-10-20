@@ -1,0 +1,219 @@
+.store-owner-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.store-owner-dashboard h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.no-store {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #666;
+}
+
+.no-store p {
+  margin-bottom: 1rem;
+}
+
+.store-overview {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.store-info h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.store-address {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.store-email {
+  color: #3498db;
+  margin-bottom: 0;
+}
+
+.store-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.ratings-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ratings-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+.ratings-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px 6px 0 0;
+}
+
+.rating-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+  align-items: center;
+}
+
+.rating-item:last-child {
+  border-bottom: none;
+}
+
+.rating-item:hover {
+  background-color: #f8f9fa;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.customer-email {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rating-stars {
+  color: #f39c12;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.rating-number {
+  margin-left: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rating-date {
+  color: #666;
+  text-align: center;
+}
+
+.no-ratings {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.no-ratings p {
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .store-overview {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .store-stats {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ratings-header {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .rating-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+  }
+  
+  .customer-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .store-owner-dashboard {
+    padding: 0.5rem;
+  }
+  
+  .store-overview,
+  .ratings-section {
+    padding: 1rem;
+  }
+  
+  .store-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-card {
+    width: 100%;
+    max-width: 200px;
+  }
+}
